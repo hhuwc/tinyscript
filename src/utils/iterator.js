@@ -1,7 +1,10 @@
 const CACHE_SIZE = 5;
 
 export class PeekIterator {
-  constructor(iteratorable, endToken = "\0") {
+  /**
+   * @param {Array|string} iteratorable
+   */
+  constructor(iteratorable, endToken) {
     this.iterator = iteratorable?.[Symbol.iterator]?.();
     this.endToken = endToken;
 

@@ -3,10 +3,11 @@ const keywords = [
   "else",
   "while",
   "break",
+  "continue",
+  "for",
   "var",
   "func",
   "return",
-  "for",
 ];
 
 export const isKeyword = (str) => {

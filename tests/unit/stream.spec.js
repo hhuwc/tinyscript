@@ -3,7 +3,7 @@ import { PeekIterator } from "@/utils/iterator";
 describe("iterator", () => {
   it("test_lookahead", () => {
     const str = "abcdefg";
-    const it = new PeekIterator(str);
+    const it = new PeekIterator(str, "\0");
 
     expect(it.next()).toBe("a");
     expect(it.peek()).toBe("b");
